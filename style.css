@@ -23,6 +23,9 @@ body {
 .page {
   text-align: center;
 
+  max-width: 38.4rem;
+  margin: 0 auto;
+
   background: var(--blue-bright);
 }
 
@@ -31,9 +34,15 @@ h1 {
   font-family: 'Staatliches', cursive;
 }
 
+header p {
+  background: var(--blue-bright);
+}
+
 header {
   background: var(--gray);
-  padding-bottom: 2.9rem;
+  margin-bottom: 2.9rem;
+
+  position: relative;
 }
 
 header img {
@@ -48,26 +57,26 @@ header h1 {
 
   color: var(--white);
 
-  text-shadow: 0rem 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+  text-shadow: 0rem 2px 2px rgba(0, 0, 0, 0.25);
 
   background: var(--browm);
 
   padding: 0.8rem 8.6rem;
 }
 
-main {
-  max-width: 38.4rem;
-  margin: 0 auto;
-}
+header p {
+  margin: auto;
 
-main p {
   font-weight: 400;
   font-size: 2rem;
   line-height: 1.5rem;
   color: var(--txt-blue);
 
-  margin-top: 1.8rem;
+  padding: 1.8rem 0;
   margin-bottom: 6rem;
+
+  position: absolute;
+  z-index: 1;
 }
 
 .cards {
@@ -76,6 +85,7 @@ main p {
   gap: 3.2rem;
 
   padding-bottom: 6rem;
+  margin-top: 19rem;
 }
 
 .card {
@@ -85,6 +95,8 @@ main p {
 .card img {
   max-width: 32rem;
   border-radius: 2rem;
+
+  object-fit: cover;
 
   animation: topup 700ms backwards;
 }
@@ -106,7 +118,7 @@ main p {
   border-radius: 2rem;
   padding: 0 2.3rem;
 
-  display:inline-flex;
+  display: inline-flex;
   align-items: center;
 
   animation: downbot 2s backwards ease;
@@ -127,7 +139,5 @@ main p {
     opacity: 0;
     transform: translateY(45px);
   }
-
 }
-
 
